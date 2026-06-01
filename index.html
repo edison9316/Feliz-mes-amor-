@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Paulina ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Cormorant Garamond',serif;
+background:#000;
+overflow-x:hidden;
+color:white;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.55)),
+url('foto.jpg.JPG');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:30px;
+position:relative;
+}
+
+.hero-content{
+animation:fadeIn 2.5s ease;
+max-width:700px;
+z-index:2;
+}
+
+.hero h1{
+font-size:3rem;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.4rem;
+opacity:.95;
+line-height:1.6;
+}
+
+.sobre-container{
+margin-top:40px;
+display:flex;
+justify-content:center;
+}
+
+.sobre{
+width:120px;
+height:80px;
+background:#fff;
+position:relative;
+cursor:pointer;
+transition:.4s;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.sobre:before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+border-left:60px solid transparent;
+border-right:60px solid transparent;
+border-top:40px solid #f2f2f2;
+transform-origin:top;
+transition:.6s;
+}
+
+.sobre:hover{
+transform:translateY(-5px);
+}
+
+.carta{
+display:none;
+background:#fffaf3;
+color:#333;
+padding:60px 30px;
+}
+
+.carta-contenido{
+max-width:850px;
+margin:auto;
+font-size:1.35rem;
+line-height:2;
+}
+
+.carta h2{
+text-align:center;
+font-size:3rem;
+margin-bottom:40px;
+color:#b8866b;
+}
+
+.parrafo{
+margin-bottom:25px;
+}
+
+.firma{
+margin-top:50px;
+text-align:right;
+font-size:1.5rem;
+font-style:italic;
+}
+
+.spotify{
+text-align:center;
+margin-top:50px;
+}
+
+.spotify a{
+display:inline-block;
+padding:18px 35px;
+background:#1DB954;
+color:white;
+text-decoration:none;
+font-size:1.1rem;
+border-radius:50px;
+font-weight:bold;
+transition:.3s;
+}
+
+.spotify a:hover{
+transform:scale(1.05);
+}
+
+.particula{
+position:fixed;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+opacity:.5;
+animation:flotar linear infinite;
+pointer-events:none;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes flotar{
+from{
+transform:translateY(110vh);
+opacity:0;
+}
+20%{
+opacity:.6;
+}
+100%{
+transform:translateY(-10vh);
+opacity:0;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>❤️ Para Paulina 1/14 ❤️</h1>
+
+<p>
+Hay personas que llegan a tu vida sin avisar...
+y terminan convirtiéndose en algo imposible de ignorar.
+</p>
+
+<div class="sobre-container">
+<div class="sobre" onclick="abrirCarta()"></div>
+</div>
+
+<p style="margin-top:20px;font-size:1rem;">
+Toca el sobre para abrirlo ✨
+</p>
+
+</div>
+
+</section>
+
+<section class="carta" id="carta">
+
+<div class="carta-contenido">
+
+<h2>Feliz Cumpleaños, Paulina ❤️</h2>
+
+<div class="parrafo">
+Hoy empieza un mes especial porque celebramos la existencia de una persona que, sin buscarlo, ha conseguido ocupar un lugar muy importante en mi vida.
+</div>
+
+<div class="parrafo">
+Hace poco tiempo que nuestros caminos se cruzaron, pero contigo entendí que algunas conexiones no necesitan años para sentirse reales. Desde el principio hubo algo diferente, algo natural, algo que hizo que todo fluyera de una manera que jamás esperaba.
+</div>
+
+<div class="parrafo">
+Me encantan nuestras conversaciones, nuestras bromas, nuestras risas y todos esos pequeños momentos que, sin darnos cuenta, terminan convirtiéndose en recuerdos que merecen quedarse para siempre.
+</div>
+
+<div class="parrafo">
+Puede que todavía no tengamos una etiqueta para definir lo que somos, pero hay algo que sí tengo claro: disfruto cada instante contigo y me ilusiona todo lo que aún está por venir.
+</div>
+
+<div class="parrafo">
+Hoy solo quiero que sonrías, que te sientas querida, valorada y especial, porque realmente lo eres.
+</div>
+
+<div class="parrafo">
+Y si pudiera pedir un deseo para este nuevo año de tu vida, sería seguir compartiendo momentos contigo, seguir descubriéndote y seguir construyendo esta historia tan bonita que comenzó cuando menos lo esperábamos.
+</div>
+
+<div class="parrafo">
+Gracias por aparecer en mi vida, Paulina.
+</div>
+
+<div class="firma">
+Con muchísimo cariño ❤️
+</div>
+
+<div class="spotify">
+<a href="https://open.spotify.com/track/6aiToGHHG0JmYhEymBtaIJ?si=HIvqy7fjQmKzclO01KKCkg" target="_blank">
+🎵 Nuestra Canción
+</a>
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+function abrirCarta(){
+
+const carta = document.getElementById("carta");
+
+carta.style.display = "block";
+
+setTimeout(()=>{
+carta.scrollIntoView({
+behavior:"smooth"
+});
+},200);
+
+}
+
+for(let i=0;i<80;i++){
+
+let p=document.createElement('div');
+
+p.className='particula';
+
+p.style.left=Math.random()*100+'vw';
+p.style.animationDuration=(10+Math.random()*20)+'s';
+p.style.animationDelay=Math.random()*10+'s';
+
+document.body.appendChild(p);
+
+}
+
+</script>
+
+</body>
+</html>
